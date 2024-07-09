@@ -1,0 +1,1 @@
+ffmpeg -i "utomp3.com - 5 Second Countdown HD.mp4" -vf "fps=24,scale=1000:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -loop 0 output.gif
